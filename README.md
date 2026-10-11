@@ -116,6 +116,58 @@ git clone https://github.com/AnsgenixD/DriverDrowsinessDetection
 cd DriverDrowsinessDetection
 pip install -r requirements.txt
 ```
+## Recommended install (using `uv` with Python 3.12)
+
+[`uv`](https://github.com/astral-sh/uv) is a fast Python package and environment manager. It creates an isolated virtual environment and installs dependencies much quicker than `pip` alone.
+1. Install `uv` (if you don't have it yet)
+
+```bash
+# macOS / Linux
+curl -LsSf https://astral.sh/uv/install.sh | sh
+
+# Windows (PowerShell)
+powershell -c "irm https://astral.sh/uv/install.ps1 | iex"
+```
+
+2. Clone the repository and enter it
+
+```bash
+git clone https://github.com/AnsgenixD/DriverDrowsinessDetection
+cd DriverDrowsinessDetection
+```
+
+3. Create a virtual environment with Python 3.12
+
+```bash
+uv venv --python 3.12
+```
+
+> `uv` will automatically download Python 3.12 if it isn't already installed on your system.
+
+4. Activate the environment
+
+```bash
+# macOS / Linux
+source .venv/bin/activate
+
+# Windows (PowerShell)
+.venv\Scripts\Activate.ps1
+
+# Windows (cmd)
+.venv\Scripts\activate.bat
+```
+
+5. Install the dependencies
+
+```bash
+uv pip install -r requirements.txt
+```
+
+6. (Optional) Verify the environment
+
+```bash
+python --version   # should report Python 3.12.x
+```
 
 ### 2. Run Real-Time Edge Detection
 ```bash
