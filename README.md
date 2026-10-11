@@ -112,7 +112,7 @@ DriverDrowsinessDetection/
 ### 1. Installation
 Clone the repository and install the lightweight requirements:
 ```bash
-git clone https://github.com/your-username/DriverDrowsinessDetection.git
+git clone https://github.com/AnsgenixD/DriverDrowsinessDetection
 cd DriverDrowsinessDetection
 pip install -r requirements.txt
 ```
