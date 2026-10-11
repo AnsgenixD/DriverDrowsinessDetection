@@ -114,6 +114,7 @@ Clone the repository and install the lightweight requirements:
 ```bash
 git clone https://github.com/AnsgenixD/DriverDrowsinessDetection
 cd DriverDrowsinessDetection
+//Optional: python3.10 -m venv my_venv && source my_venv/bin/activate
 pip install -r requirements.txt
 ```
 
